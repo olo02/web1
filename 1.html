@@ -3,25 +3,69 @@
 <head>
 	<title>01002's WEB - html</title>
 	<meta charset="utf-8">
+	<style>
+		#grid{
+			display:grid;
+			grid-template-columns: 240px 1fr;
+		}
+		#grid #article{
+			padding-left:20px;
+		}
+		body {
+			margin:0;
+		}
+		a {
+			 color:lightgreen;
+			text-decoration: none;
+		}
+		h1 {
+			font-size:50px;
+			text-align: center;
+			border-bottom:2px solid pink;
+			margin:0;
+			padding:40px;
+		}
+		#grid ol {
+			border-right:2px solid pink;
+			width: 180px;
+			margin:0;
+			padding:20px;
+			padding-left:40px;
+
+	</style>
 </head> 
 
 <body>
-	<h1><center>02 WEB</center></h1>
-	<p>
-		<h4>채팅하기 위젯 → → →</h4>
+	<h1><font color="lightgreen">02 WEB</font></h1>
+<div id="grid">
+	<ol>
+		<li><a href="index.html"><h3>Hello World</h3></a></li>
+		<li><a href="2.html"> <h3>응공이네</h3></a></li>
+		<li><a href="3.html"><h3>HTML</h3></a></li>
+		<li><a href="box.html"><h3>취미방</h3></a></li>
+		<li><a href="grid.html"><h3>css연습</h3></a></li>
+	</ol>
+
+<div id="article">
+    <p>
+		<h4><i><font color="steelblue">채팅하기 위젯 → → →</font></i></h4>
 	</p>
 
+
+<!--
 	<ul>
-		<li><a href="index.html"><h3>Hello World</h3></a></li>
+		<li><a href="index.html"><h3><font color="red">Hello World</font></h3></a></li>
 		<li><a href="2.html"><h3>응공이네</h3></a></li>
 		<li><a href="3.html"><h3>HTML</h3></a></li>
 	</ul>
+-->
+
 	<br>
 	<p>
 		<center><img src="c.png" width="30%"></center>
-		<center><h4>방명록을~남겨주세요~</h4></center>
+		<center><h4><font color="lightblue">방명록을~남겨주세요~</font></h4></center>
 	</p>
-	<h2>♥방명록♥</h2>
+	<h2><font color="pink">♥방명록♥</font></h2>
 	<p>
 		<div id="disqus_thread"></div>
 	<script>
@@ -45,15 +89,9 @@
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </p>
 
-<p>
-	<h3>coding</h3>
-	<span style="font-size:24px">coding</span>
 
-	<input type="checkbox">
-	<input type="checkbox">
-	<input type="checkbox">
-</p>
 <p>
+<!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
@@ -65,6 +103,10 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
+<!--End of Tawk.to Script-->
 </p>
+
+</div>
+</div>
 </body>
 </html>
