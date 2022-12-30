@@ -9,16 +9,31 @@
 			display:grid;
 			grid-template-columns: 150px 1fr;
 		}
-		div{
+		#grid div{
 			border:5px solid gray;
 		}
-
+		#res{
+			border:10px solid green;
+			font-size:60px;
+		}
+		@media(max-width:800px){
+		div{
+			display:none;
+			}
+		}
+	}
 	</style>
 </head>
 <body>
+<div>
  <div id="grid">
  <div>NAVIGATION</div> 
  <div>ARTICLE</div>
  </div>
+ <div id="res">
+ 	Responsive
+ </div>
+</div>
+<a href="practice.html"><img src="d.png" width="5%"></a>
 </body>
 </html>

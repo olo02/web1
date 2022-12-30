@@ -1,0 +1,42 @@
+	#grid{
+			display:grid;
+			grid-template-columns: 240px 1fr;
+		}
+	#grid #article{
+			padding-left:20px;
+		}
+		body {
+			margin:0;
+		}
+		a {
+			 color:lightgreen;
+			text-decoration: none;
+		}
+		h1 {
+			font-size:50px;
+			text-align: center;
+			border-bottom:2px solid pink;
+			margin:0;
+			padding:40px;
+		}
+		#grid ul {
+			border-right:2px solid pink;
+			width: 180px;
+			margin:0;
+			padding:20px;
+			padding-left:40px;
+		}
+		#위젯{
+			text-align: right;
+		}
+		@media(max-width:800px){
+			#grid{
+				display:block;
+			}
+			#grid ol{
+				border-right:none;
+			}
+			h1{
+				border:none;
+			}
+		}
