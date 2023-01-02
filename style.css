@@ -1,42 +1,47 @@
-	#grid{
-			display:grid;
-			grid-template-columns: 240px 1fr;
-		}
-	#grid #article{
-			padding-left:20px;
+		.webName {
+			font-size:50px;
+			border-bottom:2px solid pink;
+			text-align: center;
+			margin:0;
+			padding:40px;
+			background-color:pink;
+			text-shadow: -1px 0 brown, 0 1px brown, 1px 0 brown, 0 -1px brown;
 		}
 		body {
 			margin:0;
+			color:pink;
 		}
-		a {
-			 color:lightgreen;
+		.webPage {
+			display:grid;
+			grid-template-columns: 240px 1fr;
+			border-bottom:30px solid pink;
+		}
+		#sideBar a {
+			color:lightgreen;
 			text-decoration: none;
 		}
-		h1 {
-			font-size:50px;
-			text-align: center;
-			border-bottom:2px solid pink;
-			margin:0;
-			padding:40px;
-		}
-		#grid ul {
-			border-right:2px solid pink;
+		#sideBar {
+			border-right:4px solid pink;
 			width: 180px;
 			margin:0;
 			padding:20px;
 			padding-left:40px;
 		}
-		#위젯{
-			text-align: right;
+		#webMain{
+			padding-left:20px;
+			padding-top : 20px;
 		}
-		@media(max-width:800px){
-			#grid{
+		@media(max-width:700px){
+			.webPage{
 				display:block;
 			}
-			#grid ol{
+			#sideBar{
 				border-right:none;
+				display:grid;
+				grid-template-columns:repeat(3,1fr);
+				width:auto;
 			}
-			h1{
+			.webName{
 				border:none;
 			}
 		}
