@@ -7,6 +7,9 @@
 			background-color:pink;
 			text-shadow: -1px 0 brown, 0 1px brown, 1px 0 brown, 0 -1px brown;
 		}
+		.webName a {
+			text-decoration: none;
+		}
 		body {
 			margin:0;
 			color:pink;
@@ -30,5 +33,24 @@
 		#webMain{
 			padding-left:20px;
 			padding-top : 20px;
+		}
+		@media(max-width:700px){
+			.webPage{
+				display:block;
+			}
+			#sideBar{
+				border-right:none;
+				display:grid;
+				grid-template-columns:repeat(3,1fr);
+				width:auto;
+			}
+			#sideBar input {
+				grid-column:1/4;
+				grid-row:1/2;
+				width:50px;
+			}
+			.webName{
+				border:none;
+			}
 		}
 		
